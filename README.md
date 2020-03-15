@@ -1,2 +1,2 @@
 # sudoku solver
- A program to solve any sudoku problem.
+ A program that solves any sudoku problem.
