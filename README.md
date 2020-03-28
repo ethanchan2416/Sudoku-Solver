@@ -2,6 +2,7 @@
  A program that solves any sudoku problem.
 
 ## Demo output:
+'''
 -------------------------
 | 7 8 6 | 1 5 9 | 2 4 3 |
 | 2 4 5 | 7 8 3 | 6 9 1 |
@@ -17,3 +18,4 @@
 -------------------------
 Is sudoku solved? True
 runtime = 0.381926 seconds
+'''
