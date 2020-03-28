@@ -1,6 +1,8 @@
 # Sudoku-Solver
- A program that solves any sudoku problem.
- Provides a sample problem for demonstration, but users can also manually input their own selected sudoku.
+## Features
+  1. Allows users to input any sudoku of their choice
+  2. Checks if sudoku has unique solution
+  3. If yes, solves the sudoku
 
 ## Demo output:
   ```
