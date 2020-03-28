@@ -1,5 +1,6 @@
-# sudoku solver
+# Sudoku-Solver
  A program that solves any sudoku problem.
+ Provides a sample problem for demonstration, but users can also manually input their own selected sudoku.
 
 ## Demo output:
   ```
