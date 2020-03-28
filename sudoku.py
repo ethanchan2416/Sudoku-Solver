@@ -460,10 +460,33 @@ def find_solution_from_permus(IPermuOfMatrix):
         PassedSolution.pop()
 
 
+# -------------------- fuction for input testset --------------------
+
+
+def input_testset():
+    print('<<Step 1>> Enter indices in 1st row from left to right')
+    print('           Use SPACE to seperate')
+    print('           Enter 0 for a blank indice')
+    print('           eg. "0 8 0 0 5 0 2 0 0"\n')
+    print('<<Step 2>> Repeat 1. from top to bottom\n')
+
+    testset = []
+    for i in range(9):
+        row = input(f'Input row {i+1}: ')
+        row = row.split()
+        testset_row = []
+        for idx, val in enumerate(row):
+            val = eval(val)
+            testset_row.append(val)
+        testset.append(tuple(testset_row))
+
+    print()
+    return tuple(testset)
+
+
 # -------------------- fuction for output formatting --------------------
 
 
-# Output formatting
 def print_answer(PassedSolution):
     print('-------------------------')
     for i in range(9):
