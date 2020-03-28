@@ -1,10 +1,14 @@
 import sudoku
 from sudoku import *
 
-TestMatrix = blk_to_row(sudoku.TestMatrix)
-WorldHardestRow = blk_to_row(WorldHardest)
+TestMatrix = ((0, 8, 0, 0, 5, 0, 2, 0, 0),
+              (0, 0, 0, 7, 0, 0, 0, 9, 0),
+              (0, 3, 0, 0, 0, 2, 0, 0, 0),
+              (0, 7, 2, 3, 0, 6, 1, 0, 0),
+              (0, 0, 0, 0, 0, 5, 0, 2, 0),
+              (5, 0, 3, 0, 1, 0, 8, 0, 0),
+              (0, 0, 0, 0, 0, 0, 0, 1, 0),
+              (9, 0, 0, 0, 4, 8, 0, 0, 7),
+              (0, 0, 0, 9, 2, 0, 4, 0, 0))
 
-TestSet = (TestMatrix, SdkEasyRow, SdkMediumRow, SdkHardRow, SdkEvilRow, WorldHardestRow)
-
-for testset in TestSet:
-  solve_sudoku(testset, 'row')
+solve_sudoku(TestMatrix, 'row')
