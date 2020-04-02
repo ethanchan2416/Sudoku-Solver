@@ -1,5 +1,4 @@
 import sudoku
-from sudoku import *
 
 TestMatrix = ((0, 8, 0, 0, 5, 0, 2, 0, 0),
               (0, 0, 0, 7, 0, 0, 0, 9, 0),
@@ -16,7 +15,7 @@ print('Use sample testset, PRESS 2\n')
 choice = input('Enter choice: ')
 print()
 if choice is '1':
-    testset = input_testset()
+    testset = sudoku.input_testset()
 elif choice is '2':
     testset = TestMatrix
-solve_sudoku(testset, 'row')
+sudoku.solve_sudoku(testset, 'row')
